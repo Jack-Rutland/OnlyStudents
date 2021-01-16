@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 
 const LoginPage = () => (
     <Layout>
-        <div className="container mt-5">
+        <div className="jumbotron bd-light mt-5">
             <form>
                 <div className="form-group">
                 <div className="form-group">
@@ -17,7 +17,7 @@ const LoginPage = () => (
                 <div className="checkbox">
                     <label><input type="checkbox"/> Remember me</label>
                 </div>
-                <button type="submit" className="btn btn-default">Submit</button>
+                <button type="submit" className="btn btn-success">Submit</button>
                 </div>
             </form>
         </div>

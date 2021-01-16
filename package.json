@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "rm -rf ./build && NODE_ENV=production next build",
+    "build": "del -rf ./build && NODE_ENV=production next build",
     "start": "next start -p 8080",
     "deploy": "npm run build && gcloud app deploy"
   },

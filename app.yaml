@@ -1,8 +1,10 @@
-env: standard
 runtime: nodejs12
-service: default
-
 handlers:
-  - url: /.*
-    secure: always
-    script: auto
+# Serve all static files with url ending with a file extension
+- url: /(.*\..+)$
+  static_files: build/server/pages/\1
+  upload: build/server/pages/(.*\..+)$
+# Catch all handler to index.html
+- url: /.*
+  static_files: build/server/pages/index.html
+  upload: build/server/pages/server/pages/index.html

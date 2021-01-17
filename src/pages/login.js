@@ -1,4 +1,5 @@
 import Layout from '../components/layout';
+import Link from 'next/Link'
 
 
 const LoginPage = () => (
@@ -17,7 +18,9 @@ const LoginPage = () => (
                 <div className="checkbox">
                     <label><input type="checkbox"/> Remember me</label>
                 </div>
+                <Link href="/profile-page">
                 <button type="submit" className="btn btn-success">Submit</button>
+                </Link>
                 </div>
             </form>
         </div>

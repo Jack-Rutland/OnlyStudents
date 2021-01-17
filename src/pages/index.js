@@ -11,7 +11,7 @@ const Index = () => (
                 <p>To get started, please select one of the following options :</p>
             </h4>
             <div style={forButtonWrapper}>
-                <Link href="/login"><button style={homepageForStyle} className="btn btn-danger my-5">
+                <Link href="/register_educator"><button style={homepageForStyle} className="btn btn-danger my-5">
                         <h1>
                         For Educators
                         </h1>

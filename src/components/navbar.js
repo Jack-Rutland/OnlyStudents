@@ -9,10 +9,10 @@ const Navbar = () => (
                     <Link href="/"><a className="nav-link" href="#">Home</a></Link>
                 </li>
                 <li className="nav-item">
-                    <Link href="/"><a className="nav-link" href="#">For Educators</a></Link>
+                    <Link href="/register_educator"><a className="nav-link" href="#">For Educators</a></Link>
                 </li>
                 <li className="nav-item">
-                    <Link href="/"><a className="nav-link" href="#">For Students</a></Link>
+                    <Link href="/register_student"><a className="nav-link" href="#">For Students</a></Link>
                 </li>
             </ul>
             <Link href="/login"><button className="btn-primary btn mr-3">Log In</button></Link>

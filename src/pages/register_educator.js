@@ -27,6 +27,10 @@ const RegisterEducatorPage = () => (
                     <input type="password" className="form-control" id="name" placeholder="Full Name"/>
                 </div>
                 <div className="form-group">
+                    <label for="pwd"><h5 style={textBlack}>School Name (if applicable):</h5></label>
+                    <input type="password" className="form-control" id="name" placeholder="School Name"/>
+                </div>
+                <div className="form-group">
                     <label for="email"><h5 style={textBlack}>Email Address:</h5></label>
                     <input type="email" className="form-control" id="email" placeholder="Email"/>
                 </div>
@@ -42,7 +46,9 @@ const RegisterEducatorPage = () => (
                     <label for="pwd"><h5 style={textBlack}>Confirm Password:</h5></label>
                     <input type="password" className="form-control" id="pwd" placeholder="Password"/>
                 </div>
+                <Link href="/profile-page">
                 <button type="submit" className="btn btn-success">Submit</button>
+                </Link>
                 </div>
             </form>
         </div>

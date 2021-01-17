@@ -40,7 +40,9 @@ const RegisterStudentPage = () => (
                     <label for="pwd"><h5 style={textBlack}>Confirm Password:</h5></label>
                     <input type="password" className="form-control" id="pwd" placeholder="Password"/>
                 </div>
+                <Link href="/profile-page">
                 <button type="submit" className="btn btn-success">Submit</button>
+                </Link>
                 </div>
             </form>
         </div>

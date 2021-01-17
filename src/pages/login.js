@@ -1,8 +1,15 @@
 import Layout from '../components/layout';
 import Link from 'next/Link'
 
+import React from "react";
+import { useForm } from "react-hook-form";
 
-const LoginPage = () => (
+function LoginPage() {
+    
+    const { register, handleSubmit } = useForm();
+    const onSubmit = data => console.log(data);
+    
+    return (
     <Layout>
         <div className="jumbotron bd-light mt-5">
             <form>
@@ -26,4 +33,6 @@ const LoginPage = () => (
         </div>
     </Layout>
 );
+
+    }
 export default LoginPage;

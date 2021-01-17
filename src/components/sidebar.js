@@ -29,20 +29,22 @@ const Sidebar = () => (
 
 
 const sidebarStyle = {
-        height: '100%',
-        width: '12%',
-        position: 'fixed',
+        height: '200%',
+        width: '10%',
+        float: 'left',
         zIndex: '1',
         top: '0',
         left: '0',
         backgroundColor: '#111',
-        overflowX: 'hidden',
+        overflow: 'hidden',
         paddingTop: '20px',
         marginLeft: '0'
+
 }
 
 const liStyle = {
-    padding: '6px 8px 6px 16px',
+    paddingTop: '25px',
+    paddingLeft: '-50px',
     textDecoration: 'none',
     fontSize: '25px',
     color: '#818181',

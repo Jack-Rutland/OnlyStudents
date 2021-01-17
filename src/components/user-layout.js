@@ -10,21 +10,27 @@ const UserLayout = (props) => (
             <link rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css"/>
         </Head>
-        <div>
+        <div style={upperPage} className="bg-info">
         <Sidebar/>
         <div style={pageDiv}>
         <Navbar/>
         {props.children}
         </div>
-        <Footer style={{zIndex:2}}/>
         </div>
+        <Footer/>
     </div>
 );
 
 const pageDiv = {
-    width: '88%',
-    marginLeft: '160px',
-    float: 'right'
+    width: '90%',
+    float: 'right',
+    height: 'auto'
+};
+
+const upperPage = {
+    width: '100%',
+    height:  '200%',
+    overflow: 'hidden'
 };
 
 export default UserLayout;

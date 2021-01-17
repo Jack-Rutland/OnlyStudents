@@ -14,4 +14,6 @@ const footerP = {
     marginRight: '1%',
     marginLeft: '1%'
 };
+
+
 export default Footer;

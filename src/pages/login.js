@@ -1,5 +1,4 @@
 import Layout from '../components/layout';
-import Link from 'next/Link'
 
 import React from "react";
 import { useForm } from "react-hook-form";
@@ -12,22 +11,17 @@ function LoginPage() {
     return (
     <Layout>
         <div className="jumbotron bd-light mt-5">
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-group">
                 <div className="form-group">
-                    <label for="email">Email address:</label>
-                    <input type="email" className="form-control" id="email"/>
+                    <label>Email address:</label>
+                    <input name="email" className="form-control" id="email"  placeholder="Email" ref={register}/>
                 </div>
                 <div className="form-group">
-                    <label for="pwd">Password:</label>
-                    <input type="password" className="form-control" id="pwd"/>
+                    <label>Password:</label>
+                    <input name="password" className="form-control" id="pwd" placeholder="Password" ref={register}/>
                 </div>
-                <div className="checkbox">
-                    <label><input type="checkbox"/> Remember me</label>
-                </div>
-                <Link href="/profile-page">
                 <button type="submit" className="btn btn-success">Submit</button>
-                </Link>
                 </div>
             </form>
         </div>
